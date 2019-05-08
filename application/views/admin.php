@@ -7,6 +7,7 @@
 			foreach ($test as $key) {
 				echo $key['name']." ";
 				echo $key['cost']."<br>";
+				echo $key['num'];
 
 			};
 			echo "<br></div>";

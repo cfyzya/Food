@@ -52,7 +52,7 @@
 			$action = $action_name;
 		
 
-			//He is alive!...I hope..
+			//It is alive!...I hope..
 			
 			if(method_exists($controller, $action))
 			{

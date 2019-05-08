@@ -25,11 +25,12 @@
 			}
 			if(isset($_POST['submit']))
 			{	
-				if($data){
-				$data_for_cart = serialize($data);
-				$this->model->set_data($data_for_cart);				
-				$this->model->del_data("DELETE FROM cart");
-				echo "<h1>Спасибо за заказ. Ждите звонка для уточнения деталей<h1>";
+				if($data)
+				{
+					$data_for_cart = serialize($data);
+					$this->model->set_data($data_for_cart);				
+					$this->model->del_data("DELETE FROM cart");
+					echo "<h1>Спасибо за заказ. Ждите звонка для уточнения деталей<h1>";
 				}
 				else
 				{

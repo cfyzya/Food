@@ -3,9 +3,7 @@
 	foreach ($data as $d) 
 			{  
 				print "<form method='post' action=''>
-	 						<div style='border: 2px solid;padding:1px; margin: 5px;width: 150px;''> 
-								
-									Название: $d[name] <br>
+	 						<div style='border: 2px solid;padding:1px; margin: 5px;width: 150px;''>						Название: $d[name] <br>
 									Цена: $d[cost]
 								<input type='hidden' name='id' value='$d[id]'>	
 								<input type='submit' name='del' value='del'>
