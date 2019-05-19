@@ -20,5 +20,6 @@
 ?>
 
 <form method="post" action="">
+	<input type="text" name="tel" pattern="[0-9]{5,10}">
 	<input type="submit" name="submit" value="Take order">
 </form>

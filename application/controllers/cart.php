@@ -14,8 +14,9 @@
 
 		function action_index()
 		{
-			$data = $this->model->get_data();		
+			$data = $this->model->get_data();
 			$this->view->generate('cart', 'template', $data);
+
 			if(isset($_POST['del']))
 			{
 				$this->model->del_data("DELETE FROM cart WHERE id=$_POST[id]");
@@ -28,7 +29,7 @@
 				if($data)
 				{
 					$data_for_cart = serialize($data);
-					$this->model->set_data($data_for_cart);				
+					$this->model->set_data($data_for_cart,$_POST['tel']);				
 					$this->model->del_data("DELETE FROM cart");
 					echo "<h1>Спасибо за заказ. Ждите звонка для уточнения деталей<h1>";
 				}

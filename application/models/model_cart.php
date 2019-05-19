@@ -14,10 +14,10 @@ class Model_Cart extends Model
 	{
 		$q = $this->db->query($query);
 	}
-	public function set_data($order)
+	public function set_data($order, $tel)
 	{	
-		$q = $this->db->prepare("INSERT INTO History (Neworder) VALUES (?)");
-		$q->execute(array($order));	
+		$q = $this->db->prepare("INSERT INTO History (Neworder,telNum) VALUES (?,?)");
+		$q->execute(array($order, $tel));	
 	}
 	
 
