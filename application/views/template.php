@@ -36,6 +36,12 @@
 	{
 		padding-top: 40px;
 	}
+	.NewProduct, .history
+	{	
+		width: 50%;
+		float: right;			
+	}
+
 		
 
 </style>
