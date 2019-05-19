@@ -9,7 +9,7 @@
 				 				<ul type='none'>
 									<li>
 										Название: $d[name]
-									</li>v 
+									</li> 
 									<li>
 										Цена: $d[cost]
 									</li>								
